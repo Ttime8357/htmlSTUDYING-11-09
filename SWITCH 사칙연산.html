@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>switch문 사칙연산</title>
+
+</head>
+<body>
+<h3>switch문 사칙연산</h3>
+<hr>
+<script>
+var a;
+var b;
+var input;
+var op;
+var num;
+
+    input = prompt ("숫자를 정수로 입력하세요","정수로");
+    a=parseInt(input);
+    
+    op = prompt ("사칙연산 기호를 입력하세요","사칙연산기호");
+
+    input = prompt ("숫자를 정수로 입력하세요","정수로");
+    b=parseInt(input);
+
+    
+   
+
+    switch(op) {
+        case "+" : num = 1;
+        break;
+        case "-" : num = 2;
+            break;
+        case "*" : num = 3;
+            break;
+        case "/" : num = 4;
+            break;
+        default : 
+            document.write("Error");
+    }
+
+    if (num == 1){
+        document.write(a+b);
+    }
+    else if (num ==2){
+        document.write(a-b);
+    }
+    else if (num == 3){
+        document.write(a*b);
+    }
+    else if (num == 4){
+        document.write(a/b);
+    }
+    else{
+        document.write("ERROR2")
+    }
+</script>
+</body>
+</html>
